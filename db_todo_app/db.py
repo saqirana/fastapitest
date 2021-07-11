@@ -8,7 +8,7 @@ from sqlalchemy import (
     )
 from databases import Database
 import urllib
-Database_URL = "mysql://root:%s@localhost/items_db" % urllib.parse.quote_plus('Aitomation@10')
+Database_URL = "postgresql://root:%s@localhost/items_db" % urllib.parse.quote_plus('123')
 
 engine = create_engine(Database_URL)
 metadata = MetaData()
