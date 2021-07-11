@@ -7,8 +7,17 @@ from sqlalchemy import (
         create_engine
     )
 from databases import Database
+from environs import Env
 
-Database_URL = "postgresql://root:123@localhost/items_db")
+env = Env()
+env.read_env()
+db = env("DATABASE")
+user = env("USER")
+password = env("PASSWORD")
+host = env("HOST")
+dbname = env("DBNAME")
+
+Database_URL = "{0}://{1}:{2}@{3}/{4}".format(db, user, password, host, dbname)
 
 engine = create_engine(Database_URL)
 metadata = MetaData()
