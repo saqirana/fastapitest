@@ -18,6 +18,9 @@ HOST //host name<br />
 DBNAME //database name<br />
 
 Run following command for run server<br />
-uvicorn main:app<br />
-Now server is running onfollowing link<br />
+uvicorn main:app --reload<br />
+Now server is running on following link<br />
 127.0.0.1:8000<br />
+
+You can see API documentation on the link below<br />
+127.0.0.1:8000/docs
