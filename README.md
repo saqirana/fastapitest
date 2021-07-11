@@ -10,7 +10,7 @@ source venv/bin/activate
 Now install dependencies using the command below
 pip install -r requirements.txt
 
-Once you've installed all the requirements please make .env file on the root directory and add following variables there (your database credentials)
+Once you've installed all the requirements please make .env file on the root directory and add following variables there (after create postgres database, you've to put your database credentials)
 DATABASE //Engine Name
 USER //database username
 PASSWORD //database password
