@@ -16,3 +16,8 @@ USER //database username
 PASSWORD //database password
 HOST //host name
 DBNAME //database name
+
+Run following command for run server
+uvicorn main:app
+Now server is running onfollowing link
+127.0.0.1:8000
